@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 30vh;
+    color: white;
+}
+
+.welcome-text h1 {
+    font-size: 72px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6),
+    0px 10px 8px rgba(0, 0, 0, 0.3),
+    0px 18px 11px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-text h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    font-weight: 400;
+    margin-top: 0;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6),
+    0px 10px 8px rgba(0, 0, 0, 0.3),
+    0px 18px 11px rgba(0, 0, 0, 0.3);
+}
+
+.image-slider {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.image-slider li {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    animation: slider 40s linear infinite;
+}
+
+.image-slider li:nth-child(1) {
+    background-image: url(images/anubhav-saxena-201153.jpg);
+}
+
+.image-slider li:nth-child(2) {
+    background-image: url(images/jay-dantinne-199141.jpg);
+    animation-delay: 8s;
+}
+
+.image-slider li:nth-child(3) {
+    background-image: url(images/lukas-becker-206442.jpg);
+    animation-delay: 16s;
+}
+
+.image-slider li:nth-child(4) {
+    background-image: url(images/pablo-garcia-saldana-199111.jpg);
+    animation-delay: 24s;
+}
+
+.image-slider li:nth-child(5) {
+    background-image: url(images/robson-hatsukami-morgan-178532.jpg);
+    animation-delay: 32s;
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+
+}
