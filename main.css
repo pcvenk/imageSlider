@@ -14,7 +14,7 @@ body {
 .welcome-text h1 {
     font-size: 72px;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 10px;
     text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6),
     0px 10px 8px rgba(0, 0, 0, 0.3),
@@ -25,7 +25,7 @@ body {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2.4px;
-    font-weight: 400;
+    font-weight: 100;
     margin-top: 0;
     text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.6),
     0px 10px 8px rgba(0, 0, 0, 0.3),
@@ -68,7 +68,7 @@ body {
 }
 
 .image-slider li:nth-child(3) {
-    background-image: url(images/lukas-becker-206442.jpg);
+    background-image: url(images/jason-strull-216097.jpg);
     animation-delay: 16s;
 }
 
